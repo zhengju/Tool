@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import Flutter
 
 @main
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    // 手动添加 FlutterEngineGroup
+    lazy var engineGroup: FlutterEngineGroup = {
+        return FlutterEngineGroup(name: "multiple-flutters", project: nil)
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         // Override point for customization after application launch.
+        // 创建默认引擎（用于主页面）
+//        let defaultEngine = engineGroup.makeEngine(withEntrypoint: nil, libraryURI: nil)
+        
+        
         return true
     }
 

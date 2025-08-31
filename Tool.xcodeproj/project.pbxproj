@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49D637EADAFF49C31E036885 /* Pods_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE98B9D8E1239301008B8A7 /* Pods_Tool.framework */; };
+		B45B25B0285A7CDF6F180E8C /* Pods_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1A1B90BC7DF651663FEBBB /* Pods_Tool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A54B2C1FC56E2F03E60C1E2 /* Pods-Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool.release.xcconfig"; path = "Target Support Files/Pods-Tool/Pods-Tool.release.xcconfig"; sourceTree = "<group>"; };
 		37101F932E61F10C0008C763 /* Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37101FA92E61F10D0008C763 /* ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37101FB32E61F10D0008C763 /* ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		480C05E774741A77EE8A9010 /* Pods-Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool.release.xcconfig"; path = "Target Support Files/Pods-Tool/Pods-Tool.release.xcconfig"; sourceTree = "<group>"; };
-		7EFC23626A34BD473CA84178 /* Pods-Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool.debug.xcconfig"; path = "Target Support Files/Pods-Tool/Pods-Tool.debug.xcconfig"; sourceTree = "<group>"; };
-		FAE98B9D8E1239301008B8A7 /* Pods_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1A1B90BC7DF651663FEBBB /* Pods_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A3DF295DD6CFE74B2895FC /* Pods-Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool.debug.xcconfig"; path = "Target Support Files/Pods-Tool/Pods-Tool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D637EADAFF49C31E036885 /* Pods_Tool.framework in Frameworks */,
+				B45B25B0285A7CDF6F180E8C /* Pods_Tool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,14 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EA40B43AC460E068BF9FBB8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FAE98B9D8E1239301008B8A7 /* Pods_Tool.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		37101F8A2E61F10C0008C763 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +101,7 @@
 				37101FB62E61F10D0008C763 /* ToolUITests */,
 				37101F942E61F10C0008C763 /* Products */,
 				375E16A5936E1AD1B5739BF5 /* Pods */,
-				0EA40B43AC460E068BF9FBB8 /* Frameworks */,
+				F3F0176D4B66F233AD110FF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,10 +118,18 @@
 		375E16A5936E1AD1B5739BF5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7EFC23626A34BD473CA84178 /* Pods-Tool.debug.xcconfig */,
-				480C05E774741A77EE8A9010 /* Pods-Tool.release.xcconfig */,
+				85A3DF295DD6CFE74B2895FC /* Pods-Tool.debug.xcconfig */,
+				1A54B2C1FC56E2F03E60C1E2 /* Pods-Tool.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3F0176D4B66F233AD110FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A1A1B90BC7DF651663FEBBB /* Pods_Tool.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,11 +139,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37101FBC2E61F10D0008C763 /* Build configuration list for PBXNativeTarget "Tool" */;
 			buildPhases = (
-				AE49ACCBDFA59A3137A961A6 /* [CP] Check Pods Manifest.lock */,
+				7955F642C302C08E336B5817 /* [CP] Check Pods Manifest.lock */,
+				FA3089A72F8118AB9256139E /* [CP-User] Run Flutter Build flutter_tool_new Script */,
 				37101F8F2E61F10C0008C763 /* Sources */,
 				37101F902E61F10C0008C763 /* Frameworks */,
 				37101F912E61F10C0008C763 /* Resources */,
-				26835810EEC370964975C53B /* [CP] Embed Pods Frameworks */,
+				5A9AE6BCA62A38BD0ACDC0AE /* [CP] Embed Pods Frameworks */,
+				2DB1FB81B0630D0FF1445393 /* [CP-User] Embed Flutter Build flutter_tool_new Script */,
 			);
 			buildRules = (
 			);
@@ -268,7 +270,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26835810EEC370964975C53B /* [CP] Embed Pods Frameworks */ = {
+		2DB1FB81B0630D0FF1445393 /* [CP-User] Embed Flutter Build flutter_tool_new Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] Embed Flutter Build flutter_tool_new Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_tool/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+		5A9AE6BCA62A38BD0ACDC0AE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,7 +305,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tool/Pods-Tool-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE49ACCBDFA59A3137A961A6 /* [CP] Check Pods Manifest.lock */ = {
+		7955F642C302C08E336B5817 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +326,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		FA3089A72F8118AB9256139E /* [CP-User] Run Flutter Build flutter_tool_new Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] Run Flutter Build flutter_tool_new Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_tool/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -353,7 +383,7 @@
 /* Begin XCBuildConfiguration section */
 		37101FBD2E61F10D0008C763 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EFC23626A34BD473CA84178 /* Pods-Tool.debug.xcconfig */;
+			baseConfigurationReference = 85A3DF295DD6CFE74B2895FC /* Pods-Tool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,7 +398,6 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "此应用需要访问相册以保存图片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -388,7 +417,7 @@
 		};
 		37101FBE2E61F10D0008C763 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 480C05E774741A77EE8A9010 /* Pods-Tool.release.xcconfig */;
+			baseConfigurationReference = 1A54B2C1FC56E2F03E60C1E2 /* Pods-Tool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,7 +431,6 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "此应用需要访问相册以保存图片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;

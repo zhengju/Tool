@@ -1,4 +1,7 @@
 PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -8,6 +11,8 @@ PODS:
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - Flutter (from `../flutter_tool/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../flutter_tool/.ios/Flutter/FlutterPluginRegistrant`)
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -19,12 +24,20 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_tool/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../flutter_tool/.ios/Flutter/FlutterPluginRegistrant"
+
 SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  FlutterPluginRegistrant: 33eb8033675f887eba735b6409cd8503f377aa87
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 3a70eecb77dfe1263a9b50ceec23c8ec3cf6b6ac
+PODFILE CHECKSUM: f8eb5147008007ee371a017a00a96610d1b09aba
 
 COCOAPODS: 1.16.2
